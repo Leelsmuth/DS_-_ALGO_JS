@@ -106,6 +106,7 @@ class SinglyLinkedList {
     this.length++;
     return true;
   }
+  // remove an item from list
   remove(index) {
     if (index < 0 || index >= this.length) return undefined;
     if (index === this.length - 1) {
@@ -123,6 +124,7 @@ class SinglyLinkedList {
     this.length--;
     return removed;
   }
+  // reverse linked list
   reverse() {
     var node = this.head;
     this.head = this.tail;
